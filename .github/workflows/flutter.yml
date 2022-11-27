@@ -22,5 +22,5 @@ jobs:
         with:
           # The Flutter build release channel
           channel: stable
-      - name: Check flutter version
-        run: flutter --version
+      - name: Build apk
+        run: flutter build apk --release --split-debug-info=./builds/ --obfuscate

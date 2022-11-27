@@ -1,16 +1,30 @@
-# open_celengan
+<h1 align="center">
+    Open Celengan
+</h1>
 
-A new Flutter project.
+This is a my personal money managers.
 
-## Getting Started
+## GETTING STARTED
 
-This project is a starting point for a Flutter application.
+### Download App from release packages.
 
-A few resources to get you started if this is your first Flutter project:
+Download compiled version of app on release sections [here](https://github.com/bluespada/open_celengan/releases)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Building from sources.
+Before you started building application from start make sure you have [Flutter](https://docs.flutter.dev/get-started/install?gclsrc=aw.ds&gclsrc=ds&gclsrc=aw.ds) installed on your machine and well configured.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone stable branch
+
+```sh
+git clone https://github.com/bluespada/open_celengan -b stable --depth 1
+
+```
+
+2. enter project folders
+3. start building application, for more information about building flutter application please read [flutter documetation](https://docs.flutter.dev/deployment/android).
+4. Install App on your phone and start party.
+
+
+## License
+
+This software is under MIT Licenses, please read accompanying file copy, or read online on [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)

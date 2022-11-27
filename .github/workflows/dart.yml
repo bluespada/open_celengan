@@ -1,0 +1,32 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Dart
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Install Flutter
+        # You may pin to the exact commit or the version.
+        # uses: britannio/action-install-flutter@a486b7e3148e54a76390d849100b9dee819ff810
+      - uses: britannio/action-install-flutter@v1.1
+        with:
+          # The channel/version of Flutter to be used e.g., beta or 2.0.0
+          version: stable
+          
+      - name: Flutter Deployment
+        # You may pin to the exact commit or the version.
+        # uses: jeanluc243/Flutter-Deployment@1fd33eb513293af0c6cde57363d66a6a848ef6e5
+        uses: jeanluc243/Flutter-Deployment@0.1

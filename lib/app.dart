@@ -4,6 +4,9 @@
 
 import 'package:flutter_modular/flutter_modular.dart';
 
+// import modules
+import 'modules/modules.dart';
+
 class AppModule extends Module {
 
   // initialize binder
@@ -14,7 +17,8 @@ class AppModule extends Module {
 
   // initialize module routes
   List<ModularRoute> get route => [
-  
+    // initialize home module route
+    ModuleRoute("/", module: HomeModule())
   ];
 
 }
